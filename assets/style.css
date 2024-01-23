@@ -1,11 +1,11 @@
 @font-face {
 	font-family: 'Inter';
-	src: url(/assets/fonts/Inter-Regular.ttf);
+	src: url(/fonts/Inter-Regular.ttf);
 }
 
 @font-face {
 	font-family: 'Spectral';
-	src: url(/assets/fonts/Spectral-Regular.ttf);
+	src: url(/fonts/Spectral-Regular.ttf);
 }
 
 body {
