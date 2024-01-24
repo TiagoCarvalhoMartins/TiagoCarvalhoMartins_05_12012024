@@ -75,7 +75,14 @@
 <main>
 	<div id="about">
 		<div class="picture left">
-			<img src="./assets/images/nina.webp">
+			<picture>
+				<!-- Pour les écrans larges (min-width: 1200px) -->
+				<source class="d-block w-100" media="(min-width: 1200px)" srcset="./assets/images/nina.webp">
+				<!-- Pour les écrans moyens (min-width: 768px) -->
+				<source class="d-block w-100" media="(min-width: 768px)" srcset="./assets/images/nina-medium.webp">
+				<!-- Par défaut pour les écrans plus petits -->
+				<img class="d-block w-100" src="./assets/images/nina-small.webp" alt="Description de l'image">
+			</picture>
 		</div>
 		<div id="about-me">
 			<h2 class="about-me__title">A propos de moi</h2>
