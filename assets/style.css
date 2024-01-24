@@ -45,20 +45,6 @@ nav a {
 #about {
 	display: flex;
 	background-color: #F6D2B8;
-	padding-inline: 100px;
-	padding-block: 100px;
-	position: relative;
-}
-
-.picture.left::before {
-	content: ' ';
-	background-color: #E5975F;
-	width: 374px;
-	height: 329px;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	z-index: -1;
 }
 
 .picture {
