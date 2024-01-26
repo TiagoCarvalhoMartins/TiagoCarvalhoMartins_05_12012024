@@ -47,13 +47,13 @@ nav a {
 	background-color: #F6D2B8;
 }
 
-.picture {
+picture {
 	flex: 1;
 	margin: 0 20px;
 	z-index: 0;
 }
 
-.picture img {
+picture img {
 	width: 100%;
 
 }
