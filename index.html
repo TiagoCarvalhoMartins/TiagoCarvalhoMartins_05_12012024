@@ -6,26 +6,70 @@
 	<meta charset="UTF-8">
 </head>
 <body>
-
+	<header>
+		<div class="top-header">
+			<h1 class="name">Nina Carducci</h1>
+			<nav>   
+				<ul>
+					<li><a href="#about">À propos</a></li>
+					<li><a href="#gallery">Galerie</a></li>
+					<li><a href="#services">Service</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt=""></a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="carousel">
+			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-indicators">
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<picture>
+							<!-- Pour les écrans larges (min-width: 1200px) -->
+							<source fetchpriority="high" class="d-block w-100" media="(min-width: 1200px)" srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp">
+							<!-- Pour les écrans moyens (min-width: 768px) -->
+							<source fetchpriority="high" class="d-block w-100" media="(min-width: 768px)" srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-medium.webp">
+							<!-- Par défaut pour les écrans plus petits -->
+							<img fetchpriority="high" class="d-block w-100" src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-small.webp" alt="Description de l'image">
+						</picture>
+					</div>
+					<div class="carousel-item">
+						<picture>
+							<!-- Pour les écrans larges (min-width: 1200px) -->
+							<source fetchpriority="high" class="d-block w-100" media="(min-width: 1200px)" srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp">
+							<!-- Pour les écrans moyens (min-width: 768px) -->
+							<source fetchpriority="high" class="d-block w-100" media="(min-width: 768px)" srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-medium.webp">
+							<!-- Par défaut pour les écrans plus petits -->
+							<img fetchpriority="high" class="d-block w-100" src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-small.webp" alt="Description de l'image">
+						</picture>
+					</div>
+					<div class="carousel-item">
+						<picture>
+							<!-- Pour les écrans larges (min-width: 1200px) -->
+							<source fetchpriority="high" class="d-block w-100" media="(min-width: 1200px)" srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp">
+							<!-- Pour les écrans moyens (min-width: 768px) -->
+							<source fetchpriority="high" class="d-block w-100" media="(min-width: 768px)" srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-medium.webp">
+							<!-- Par défaut pour les écrans plus petits -->
+							<img fetchpriority="high" class="d-block w-100" src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-small.webp" alt="Description de l'image">
+						</picture>
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</div>
+	</header>
 <main>
-	<div id="about">
-		<div class="picture left">
-			<picture>
-				<!-- Pour les écrans larges (min-width: 1200px) -->
-				<source fetchpriority="high" media="(min-width: 1200px)" srcset="./assets/images/nina.webp">
-				<!-- Pour les écrans moyens (min-width: 768px) -->
-				<source fetchpriority="high" media="(min-width: 768px)" srcset="./assets/images/nina-medium.webp">
-				<!-- Par défaut pour les écrans plus petits -->
-				<img fetchpriority="high" src="./assets/images/nina-small.webp" alt="Description de l'image">
-			</picture>
-		</div>
-		<div id="about-me">
-			<h2 class="about-me__title">A propos de moi</h2>
-			<h3 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h3>
-			<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
-				C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
-		</div>
-	</div>
 	<div id="gallery">
 		<h2 class="title">Portfolio</h2>
 		<div class="container py-3">
