@@ -59,8 +59,9 @@ picture {
 }
 
 picture img {
-	width: 100%;
+	max-width: 1920px;
 }
+
 #about-me {
 	flex: 2
 }
@@ -88,7 +89,7 @@ picture img {
 	justify-content: center;
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-	color: #fff;
+	color: black;
 	background-color: #BEB45A;
 	border-radius:0 ;
 }
@@ -230,6 +231,17 @@ input[type="submit"] {
 	background-color: #BEB45A;
 	padding: .5em 1em
 }
+.informations {
+	margin-left: 12%;
+}
+.adresse p {
+	margin: 0;
+}
+
+.phonenumber a {
+	text-decoration: none;
+	color: inherit;
+}
 
 @media all and (max-width: 1180px) {
 
@@ -247,6 +259,10 @@ input[type="submit"] {
 	#about-me p {
 		width: 100%;
 	}
+
+	picture img {
+		max-width: 1180px;
+	}
 }
 
 @media all and (max-width: 1000px) {
@@ -261,6 +277,11 @@ input[type="submit"] {
 	.picture {
 		width: 50%;
 	}
+
+	picture img {
+		max-width: 1000px;
+	}
+
 	.about-me__title{
 		text-align: center;
 		margin-top: 1em;
@@ -316,6 +337,10 @@ input[type="submit"] {
 		flex: 1;
 		padding-block: 1em;
 		text-align: center;
+	}
+
+	picture img {
+		max-width: 650px;
 	}
 
 	#services .container {
