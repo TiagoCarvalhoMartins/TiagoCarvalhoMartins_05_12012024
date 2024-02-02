@@ -349,7 +349,7 @@ input[type="submit"] {
 	}
 
 	picture img {
-		max-width: 650px;
+		width:  650px;
 	}
 
 	.about-me__introduction {
@@ -368,10 +368,11 @@ input[type="submit"] {
 	.banner {
 		width: 100%;
 	}
-	.picture.left{
+	.picture.left picture{
 		display: flex;
 		justify-content: center;
-		width: 100%
+		width: 100%;
+		margin-left: 0
 	}
 }
 
