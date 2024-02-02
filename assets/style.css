@@ -63,7 +63,8 @@ picture img {
 }
 
 #about-me {
-	flex: 2
+	flex: 2;
+	margin-left: 20px 
 }
 .about-me__title {
 	margin-top: 1em;
@@ -339,8 +340,20 @@ input[type="submit"] {
 		text-align: center;
 	}
 
+	#about {
+		padding: 10px;
+	}
+
+	#about-me {
+		margin-left: 0;
+	}
+
 	picture img {
 		max-width: 650px;
+	}
+
+	.about-me__introduction {
+		width: 100%;
 	}
 
 	#services .container {
@@ -356,6 +369,8 @@ input[type="submit"] {
 		width: 100%;
 	}
 	.picture.left{
+		display: flex;
+		justify-content: center;
 		width: 100%
 	}
 }
