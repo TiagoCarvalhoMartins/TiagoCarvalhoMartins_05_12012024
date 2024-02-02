@@ -250,6 +250,11 @@ input[type="submit"] {
 		width: 100%;
 	}
 
+	.carousel-item img{
+		width: 1779px;
+		height: 545px;
+	}
+
 	.picture {
 		flex : 2;
 	}
@@ -270,6 +275,11 @@ input[type="submit"] {
 
 	.banner {
 		width: 100%;
+	}
+
+	.carousel-item img{
+		width: 1000px;
+		height: 460px;
 	}
 
 	#about {
@@ -338,6 +348,11 @@ input[type="submit"] {
 		flex: 1;
 		padding-block: 1em;
 		text-align: center;
+	}
+
+	.carousel-item img{
+		width: 430px;
+		height: 200px;
 	}
 
 	#about {
