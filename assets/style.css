@@ -22,18 +22,18 @@ body {
 	font-size: 26px;
 }
 
-.nav ul {
+nav ul {
 	display: flex;
 	list-style-type: none;
 	font-size: 14px;
 	margin-bottom: 0;
 }
 
-.nav li {
+nav li {
 	padding-inline: 10px;
 }
 
-.nav a {
+nav a {
 	text-decoration: none;
 	color: #000
 }
@@ -42,37 +42,29 @@ body {
 	width: 20px;
 }
 
+.banner  {
+	width: 100%
+   }
+
 #about {
 	display: flex;
 	background-color: #F6D2B8;
-	padding-inline: 100px;
-	padding-block: 100px;
-	position: relative;
+	width: 100%;
 }
 
-.picture.left::before {
-	content: ' ';
-	background-color: #E5975F;
-	width: 374px;
-	height: 329px;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	z-index: -1;
-}
-
-.picture {
+picture {
 	flex: 1;
 	margin: 0 20px;
 	z-index: 0;
 }
 
-.picture img {
-	width: 100%;
-
+picture img {
+	max-width: 1920px;
 }
+
 #about-me {
-	flex: 2
+	flex: 2;
+	margin-left: 20px 
 }
 .about-me__title {
 	margin-top: 1em;
@@ -90,18 +82,15 @@ body {
 	font-size: 14px;
 }
 
-#gallery {
-	/*	min-height: 100vh; */
-}
 .title{
 	text-align: center;
 	padding-block: 2em;
 }
-.gallery .nav {
+.gallery nav {
 	justify-content: center;
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-	color: #fff;
+	color: black;
 	background-color: #BEB45A;
 	border-radius:0 ;
 }
@@ -144,13 +133,13 @@ body {
 	padding-block: 3em;
 }
 .quote__text {
-	font-family: Spectral;
+	font-family: 'Spectral';
 	font-style: italic;
 	font-weight: 300;
 
 }
 .quote__author {
-	font-family: Spectral;
+	font-family: 'Spectral';
 	font-weight: 800;
 	font-size: 22px;
 }
@@ -188,6 +177,15 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	z-index: 1;
+}
+
+.price {
+
+	font-size: 1.5rem;
+	margin-top: 0px;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
 }
 
 #contact {
@@ -243,40 +241,67 @@ input[type="submit"] {
 	background-color: #BEB45A;
 	padding: .5em 1em
 }
+.informations {
+	margin-left: 12%;
+}
+.adresse p {
+	margin: 0;
+}
+
+.phonenumber a {
+	text-decoration: none;
+	color: inherit;
+}
 
 @media all and (max-width: 1180px) {
+
+	.banner {
+		width: 100%;
+	}
+
+	.carousel-item img{
+		width: 1779px;
+		height: 545px;
+	}
+
 	.picture {
 		flex : 2;
-	}
-	#about, #contact .container {
-		align-items: center;
 	}
 	.about-me__title {
 		margin-top: 0;
 		margin-bottom: 1em;
 	}
-	#about-me h6, #about-me p {
+	#about-me p {
 		width: 100%;
+	}
+
+	picture img {
+		max-width: 1180px;
 	}
 }
 
 @media all and (max-width: 1000px) {
-	#about{
-		flex-direction: column;
 
+	.banner {
+		width: 100%;
+	}
+
+	.carousel-item img{
+		width: 1000px;
+		height: 460px;
+	}
+
+	#about {
+		flex-direction: column;
 	}
 	.picture {
 		width: 50%;
 	}
-	.picture.left::before {
-		width: 100%;
-		height: 30%;
-		position: absolute;
-		bottom: auto;
-		top: 0;
-		left: 0;
-		z-index: -1;
+
+	picture img {
+		max-width: 1000px;
 	}
+
 	.about-me__title{
 		text-align: center;
 		margin-top: 1em;
@@ -324,33 +349,54 @@ input[type="submit"] {
 		flex-direction: column;
 		padding-inline: 0;
 	}
-	.top-header .nav, .top-header .nav ul {
+	.top-header nav, .top-header nav ul {
 		width: 100%;
 		padding: 0 0 0 0;
 	}
-	.top-header .nav li {
+	.top-header nav li {
 		flex: 1;
 		padding-block: 1em;
 		text-align: center;
 	}
-	.picture.left::before, .picture.right::before {
-		height: 150px;
+
+	.carousel-item img{
+		width: 430px;
+		height: 200px;
 	}
+
+	#about {
+		padding: 10px;
+	}
+
+	#about-me {
+		margin-left: 0;
+	}
+
+	picture img {
+		width:  650px;
+	}
+
+	.about-me__introduction {
+		width: 100%;
+	}
+
 	#services .container {
 		align-items: center;
 	}
 	.service {
 		max-width: 90%;
 	}
-	#about, #contact {
-		padding-inline: 2em;
-		padding-block: 2em;
-	}
 	form {
 		width: 100%;
 	}
-	.picture {
-		width: 80%;
+	.banner {
+		width: 100%;
+	}
+	.picture.left picture{
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		margin-left: 0
 	}
 }
 
